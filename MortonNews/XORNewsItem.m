@@ -8,27 +8,31 @@
 
 #import "XORNewsItem.h"
 @implementation XORNewsItem
-@synthesize itemTitle;
 @synthesize itemID;
-@synthesize completed;
-@synthesize itemCategory;
+@synthesize itemAuthor;
 @synthesize itemContent;
+@synthesize itemCategory;
+@synthesize itemTitle;
 @synthesize itemDate;
 @synthesize itemURL;
-@synthesize itemAuthor;
+@synthesize itemHits;
 @synthesize urgent;
+@synthesize completed;
 
 -(id)initWithJSONData:(NSDictionary *)data{
     self = [super init];
     if(self){
-        //NSLog(@"initWithJSONData method called");
-        self.itemTitle = [data objectForKeyedSubscript:@"Title"];
-        self.itemID = [[data objectForKey:@"ID"] integerValue];
-        self.itemContent = [data objectForKey:@"content"];
+        NSLog(@"initWithJSONData method called");
+        self.itemID = [[data objectForKey:@"id"] integerValue];
         self.itemAuthor = [data objectForKey:@"author"];
+        self.itemContent = [data objectForKey:@"content"];
+        self.itemCategory = [data objectForKey:@"category"];
+        self.itemTitle = [data objectForKeyedSubscript:@"title"];
+        self.itemDate = [data objectForKey:@"date"];
         self.itemURL = [data objectForKey:@"url"];
-        self.completed = [data objectForKey:@"completed"];
+        self.itemHits = [data objectForKey:@"hits"];
         self.urgent = [data objectForKey:@"urgent"];
+        self.completed = [data objectForKey:@"completed"];
     }
     return self;
 }

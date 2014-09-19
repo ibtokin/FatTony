@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>51850A85-6684-490F-8CC6-D7CBD2C10718</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MortonNews</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>11A06DD8-507F-487D-BFC9-7DF6E8E6AB5E</key>
+		<string>ssh://github.com/ibtokin/MortonNews.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MortonNews.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>11A06DD8-507F-487D-BFC9-7DF6E8E6AB5E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ibtokin/MortonNews.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>11A06DD8-507F-487D-BFC9-7DF6E8E6AB5E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>11A06DD8-507F-487D-BFC9-7DF6E8E6AB5E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MortonNews</string>
+		</dict>
+	</array>
+</dict>
+</plist>

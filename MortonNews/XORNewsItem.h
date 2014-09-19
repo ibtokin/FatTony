@@ -12,14 +12,15 @@
 
 -(id)initWithJSONData:(NSDictionary*)data;
 
-@property NSString *itemTitle;
 @property (assign) NSInteger *itemID;
-@property BOOL completed;
-@property (strong) NSString *itemCategory;
+@property (strong) NSString *itemAuthor;
 @property (strong) NSString *itemContent;
+@property (strong) NSString *itemCategory;
+@property NSString *itemTitle;
 @property (strong) NSString *itemDate;
 @property (strong) NSString *itemURL;
-@property (strong) NSString *itemAuthor;
+@property (strong) NSString *itemHits;
 @property BOOL urgent;
+@property BOOL completed;
 
 @end

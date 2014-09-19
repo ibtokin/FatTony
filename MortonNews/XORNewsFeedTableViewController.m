@@ -40,10 +40,10 @@
 }
 
 //gets data from server and calls above method to populate array
-
+/*
 -(void)connectionSuccessful:(NSData *)data{
     [self setupDataFromJSONArray:data];
-}
+}*/
 
 - (void)loadInitialData {
     XORNewsItem *item1 = [[XORNewsItem alloc] init];
@@ -78,6 +78,7 @@
 {
     [super viewDidLoad];
     self.newsItems = [[NSMutableArray alloc] init];
+
     [self loadInitialData];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -97,14 +98,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.newsItems count];
 }
@@ -112,17 +111,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if(cell)
+    if(!cell)
     {
-        //set configuration of cell:
-    if([_newsItems count] ==0){
+        cell = [[UITableViewCell alloc] init];
         cell.textLabel.text = @"nothing to show";
-        }
+        NSLog(@"Cell created");
     }
     else{
         XORNewsItem *currentItem = [_newsItems objectAtIndex:indexPath.row];
         //call desired item from object
         cell.textLabel.text = [currentItem itemAuthor];
+        return cell;
     }
     return cell;
 }
