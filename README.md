@@ -5,7 +5,7 @@ An iOS app for students of J. Sterling Morton East High School. It's primary fea
 
 It's written for iOS 7 (may be rewriting it in Swift for iOS 8). It relies on a Django REST API and admin web form (see "gold/silver-spork" repos) which will scrape and store the latest social media posts, accept manual input/editing from admins, tally 'hits' for each item and serve as a cross-platform API endpoint for the iOS app and (eventual) Android app.
 
-The project is codenamed after the character Fat Tony from The Simpsons, voiced by Joe Montegna, an alumn of Morton East High School and native of Cicero, Illinois.
+The project is codenamed after the character Fat Tony from The Simpsons, voiced by Joe Montegna, an alumn of J. Sterling Morton East High School and native of Cicero, Illinois.
 
 Any questions, comments, concerns should be directed to myself at adanasandoval@gmail.com
 
